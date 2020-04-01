@@ -22,7 +22,7 @@
 
     <include
         layout="@layout/content_peliculas_accion"
-        android:layout_height="671dp" />
+        android:layout_height="386dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"

@@ -33,9 +33,9 @@ class PeliculasAdapter(private val longItemClickistener: (Int) -> Unit) :
             holder.itemView.setOnClickListener {
                 //Toast.makeText(holder.itemView.context, dataSet.get(position).nombre, Toast.LENGTH_LONG).show()
                 val intent = Intent(holder.itemView.context, peliculas_accion:: class.java)
-               // intent.putExtra("control", Singleton.dataSet.get(position).control)
+                intent.putExtra("control", Singleton.dataSet.get(position).control)
                 intent.putExtra("nombre", Singleton.dataSet.get(position).nombre)
-               // intent.putExtra("carrera",Singleton.dataSet.get(position).carrera)
+                intent.putExtra("carrera",Singleton.dataSet.get(position).carrera)
 
                 holder.itemView.context.startActivity(intent)
             }
